@@ -36,7 +36,7 @@
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link align-middle px-0">
+                                    <a href="{{url('/teacher')}}" class="nav-link align-middle px-0">
                                         <i class="fs-4 bi-house"></i> <span class="ms-1 d-none d-sm-inline">Teacher</span>
                                     </a>
                                 </li>
