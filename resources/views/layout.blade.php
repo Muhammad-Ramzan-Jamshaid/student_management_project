@@ -31,7 +31,7 @@
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link align-middle px-0">
+                                    <a href="{{url('/student')}}" class="nav-link align-middle px-0">
                                         <i class="fs-4 bi-house"></i> <span class="ms-1 d-none d-sm-inline">Student</span>
                                     </a>
                                 </li>
@@ -69,8 +69,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col py-3">
-                        Content area...
+                    <div >
+                        @yield('content')
                     </div>
                 </div>
         </div>
