@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Models\Course;
 use Illuminate\Http\Request;
 
 class CourseController extends Controller
@@ -10,13 +10,13 @@ class CourseController extends Controller
     public function index()
     {
         $courses = Course::all();
-        return view('course.index')->with('$courses',$courses);
+        return view('course.index')->with('courses',$courses);
     }
 
     
     public function create()
     {
-        return view('curse.create');
+        return view('course.create');
     }
 
  
@@ -46,13 +46,14 @@ class CourseController extends Controller
     {
         $courses = Course::find($id);
         $input = $request::all();
-        $courses->save($input);
-        return redirect('course')->with('flash_message','course_Added!');
+        $courses->update($input);
+        return redirect('course')->with('flash_message','course_updated!');
     }
 
     
     public function destroy(string $id)
     {
-        
+        $courses = Course::destroy($id);
+        return redirect('course')->with('flash_message','Course_deleted');
     }
 }

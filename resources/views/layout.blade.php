@@ -41,8 +41,8 @@
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link align-middle px-0">
-                                        <i class="fs-4 bi-house"></i> <span class="ms-1 d-none d-sm-inline">Enrollment</span>
+                                    <a href="{{url('/course')}}" class="nav-link align-middle px-0">
+                                        <i class="fs-4 bi-house"></i> <span class="ms-1 d-none d-sm-inline">Course</span>
                                     </a>
                                 </li>
                                 <li class="nav-item">
