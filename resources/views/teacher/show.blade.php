@@ -12,7 +12,7 @@
             <p class="card-text">Email : {{ $studnet->email }}</p>
         <p class="card-text">Address : {{ $teacher->address }}</p>
         <p class="card-text">Phone : {{ $teacher->phone }}</p>
-        <p class="card-text">Age : {{ $teacher->age}}</p>
+        <p class="card-text">Age : {{ $teacher->age}}</p>show
         <p class="card-text">Experience : {{ $teacher->experience}}</p>
   </div>
        
